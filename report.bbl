@@ -4,8 +4,17 @@
 {Association for Project Management} (2017).
 \newblock Configuration management.
 
+\bibitem[Lager et~al., 2004]{EIA-649}
+Lager, A., Brummer, B., Noble, D., et~al. (2004).
+\newblock Eia-649: A national consensus standard for configuration management.
+
 \bibitem[Perry, 1994]{dod-history}
 Perry, W.~J. (1994).
 \newblock Specification \& standards: A new way of doing business.
+
+\bibitem[Wang, 2011]{history-standards}
+Wang, P. (2011).
+\newblock A brief history of standards and standardization organizations: A
+  chinese perspective.
 
 \end{thebibliography}
