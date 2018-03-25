@@ -5,47 +5,49 @@ The style file: apalike.bst
 Database file #1: report.bib
 Warning--entry type for "apmDef" isn't style-file defined
 --line 1 of file report.bib
+Warning--entry type for "DesignDocExample" isn't style-file defined
+--line 69 of file report.bib
 Warning--empty publisher in mil-hdbk
 Warning--empty journal in history-standards
-You've used 5 entries,
+You've used 6 entries,
             1935 wiz_defined-function locations,
-            494 strings with 4353 characters,
-and the built_in function-call counts, 1358 in all, are:
-= -- 126
-> -- 51
-< -- 4
-+ -- 18
-- -- 16
-* -- 96
-:= -- 265
-add.period$ -- 10
-call.type$ -- 5
-change.case$ -- 31
-chr.to.int$ -- 5
-cite$ -- 7
-duplicate$ -- 57
-empty$ -- 89
-format.name$ -- 21
-if$ -- 247
+            499 strings with 4452 characters,
+and the built_in function-call counts, 1594 in all, are:
+= -- 150
+> -- 58
+< -- 5
++ -- 20
+- -- 18
+* -- 111
+:= -- 312
+add.period$ -- 12
+call.type$ -- 6
+change.case$ -- 37
+chr.to.int$ -- 6
+cite$ -- 8
+duplicate$ -- 67
+empty$ -- 104
+format.name$ -- 24
+if$ -- 290
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 3
-newline$ -- 23
-num.names$ -- 15
-pop$ -- 31
+newline$ -- 27
+num.names$ -- 18
+pop$ -- 35
 preamble$ -- 1
-purify$ -- 32
+purify$ -- 38
 quote$ -- 0
-skip$ -- 49
+skip$ -- 58
 stack$ -- 0
-substring$ -- 62
+substring$ -- 74
 swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 34
 warning$ -- 2
-while$ -- 10
+while$ -- 12
 width$ -- 0
-write$ -- 52
-(There were 3 warnings)
+write$ -- 62
+(There were 4 warnings)

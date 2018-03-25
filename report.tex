@@ -63,9 +63,9 @@
 	\section{The 5 Functions of CM/SCM} \label{sec:principles}
 	EIA-649 (see Section \ref{sec:adoption}) outlines 5 functions (sometimes known as disciplines) that should be enforced in both hardware and software projects. Together they establish a standard for managing the development of a project (\cite{mil-hdbk}). 
 	
-	This section will take a brief look at the 5 traditional functions of CM before looking how they differ in SCM. 
+	This section will take a brief look at the 5 traditional functions of CM before looking how they differ in SCM, as detailed by the latest version of EIA-649.
 	
-		\subsection{Function 1: CM Planning and Management} \label{sec:planning}
+		\subsection{CM Planning and Management} \label{sec:planning}
 		Each project should have a formal document that outlines, in detail, all process that are required for the project. This should be used as a reference for everyone involved. Such a document will include procedures for:
 		\begin{itemize}
 			\item personnel
@@ -80,17 +80,34 @@
 		\end{itemize}
 		These processes will be created before development of the project has begun. Any changes to this document during the life-cycle of the project should be avoided, to prevent confusion. But if changes are needed, then a Document Change Notice (DCN) should be issued to all personnel. The details of a DCN can be found within a CM document.
 		
-		\subsection{Function 2: Configuration Identification (CI)} \label{sec:identify}
+		\subsection{Configuration Identification (CI)} \label{sec:identify}
+		CI involves defining the system and subsystem architectures through the use of baselines. The procedures for changing any part of the system - how the change is identified, documented and tracked through design, development, testing and delivery - is created during this function. 
 		
+		\subsection{Configuration Control} \label{sec:control}
+		Configuration Control is the evaluation of all change-requests and change-proposals to the project and its documentation; including the process for approving or rejecting the changes.
 		
-		\subsection{Function 3: Configuration Control} \label{sec:control}
+		\subsection{Configuration Status Accounting} \label{sec:accounting}
+		Configuration Status Accounting dictate the process for recording and reporting configuration item descriptions and all changes from the original designed baseline.
 		
-		\subsection{Function 4: Configuration Status Accounting} \label{sec:accounting}
-		
-		\subsection{Function 5: Configuration Verification and Audit} \label{sec:audit}
+		\subsection{Configuration Verification and Audit} \label{sec:audit}
+		The final function of CM is the independent review of hardware and software to ensure that the product meets the established performance requirements outlined at the start of the project.
 		
 		\subsection{Alterations for SCM} \label{sec:scm-alterations}
+		SCM was created to better suit the challenges posed by Software Projects, as stated in Section \ref{sec:scm}. SCM places a greater emphasis on the need to trace changes in the system with the ability to verify that the delivered software does not exceed the original intent for the program. As a result the four functions for SCM are:
+		
+		\begin{enumerate}
+			\item Configuration Identification (CI)
+			\item Configuration Change Control
+			\item Configuration Status Accounting
+			\item Configuration Audits
+		\end{enumerate}
 	
+		The first three functions of SCM are closely linked to their traditional counterparts, see Sections \ref{sec:identify}, \ref{sec:control} and \ref{sec:accounting} for details about SCM 1, 2 and 3. 
+		
+		Configuration Audits for SCM are separated into two halves, functional and physical, both of which can occur at either delivery or when a change is implemented. Functional audits look at a configuration item to ensure that it meets both the functional and performance requirements. A physical audit ensures that a configuration item is installed within the wider system in accordance with the system design documentation .
+		
+		Notice that the CM Planning and Management function of traditional CM has been entirely removed from SCM. That is because Design Document, a Software Engineering practice, covers the majority of the same topics \footnote{A Design Document is a technical guide for Developers to use before, during and after Developing a piece of Software.}(\cite{DesignDocExample}).
+		
 	\section{Using CM} \label{sec:using}
 	
 		\subsection{In the Office} \label{sec:office}
