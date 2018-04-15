@@ -49,7 +49,7 @@
 		\begin{wrapfigure}{l}{5cm}
 			\centering
 			\includegraphics[height=4cm]{images/william-perry.jpg}
-			\caption{William J. Perry, 19th Secretary of Defence for the United States under President Bill Clinton. Perry was instrumental in streamlining the US military infrastructure. Which formalised the discipline known as Configuration Management in private sector industries.}
+			\caption{William J. Perry, 19th Secretary of Defence for the United States under President Bill Clinton. Perry was instrumental in streamlining the US military infrastructure. Which formalised the discipline known as Configuration Management in private sector industries.} \label{fig:william}
 		\end{wrapfigure}
 	
 		It was not until the 1960s that CM became a technical discipline of its own, when the DoD released a series of military standards known as the \emph{``480 series"}. These standards were regularly updated and eventually consolidated into MIL-HDBK-61 in 1991, which contained a series of technical standards supported by standards developing organisations (SDO)(personal communication, \cite{dod-history}) \footnote{A Standards Developing Organisation (SDO) is a body whose primary activities revolve around the improvement and development of technical standards within a given field (\cite{history-standards}).}.
@@ -109,16 +109,40 @@
 		Notice that the CM Planning and Management function of traditional CM has been entirely removed from SCM. That is because Design Document, a Software Engineering practice, covers the majority of the same topics \footnote{A Design Document is a technical guide for Developers to use before, during and after Developing a piece of Software.}(\cite{DesignDocExample}).
 		
 	\section{Using CM} \label{sec:using}
+	In this section we will examine how the functions of CM can be utilised within work and personal projects, touching briefly upon the techniques used to accomplish CM. 
 	
 		\subsection{In the Office} \label{sec:office}
+		Historically configuration management has required a dedicated employee, or team of employees for larger projects, in order to function. Typically they would be known as Administrators. This is still true today for complicated projects carried out by large organisations. Outsourcing is another method in which configuration management can be deployed, where an external companies will handle the administration of a project. Small start up firms will incorporate the task of configuration management into a senior member of the development team. In any case, the tools and techniques used will remain the same (\cite{CM-BestPractices}). 
+		
+		Each function of CM produces a formal product. The first stage (see Section \ref{sec:planning}) creates a document, much like a design document, that informs individuals how to contribute to a project in a way that allows others to understand what was changed. The Administrator of a project creates this document and will ultimately decide how tasks will be completed. There are a range of tools to assist in this task such as \emph{Chef} (\cite{chef}) or \emph{Puppet} (\cite{puppet}) which take a lot of the burden away from the administrator. 
+		
+		Functions two through five produce a variety of reports. The creation of these documents is detailed by the CM document produced in the first stage. For example; when developing software in a modern formal setting there are two versions of the project at any given time (in most cases), a \emph{master} copy and a \emph{development} copy. When an edit is created it is tested according to the baselines detailed in CI (see Section \ref{sec:identify}) within the development build. The results of the test are recorded, typically by a tool such as \emph{Codeship} (\cite{codeship}). Assuming the tests pass, a request is made to update the Master copy with the new edits. The industry standard is to use a \emph{GitHub pull request} (\cite{github}) to accomplish and record this, including any last minute edits. Finally at the end of each completed feature a review (or audit) of the project is performed to ensure that the work accomplished is relevant to the original specification. 
+		
+		The above example shows that by producing reports from CM functions two through five and adhering to the guidelines set out by the CM document (see Section \ref{sec:planning}) the functions of CM will be automatically applied to any project. However, the tools will cited in the example will differ from the tools used in a non-software based project. 
 		
 		\subsection{At Home} \label{sec:home}
+		As discussed in Section \ref{sec:history}, the primary function of CM is to ensure that tasks which affect a project are performed in a near identical manner so that individuals can collaborate with minimal training. In the office this could be a trivial task such as how a testing report is filed, to a critical task as to what testing parameters will be used. 
+		
+		\begin{wrapfigure}{r}{7cm}
+			\centering
+			\includegraphics[height=4cm]{images/shopping-list.jpg}
+			\caption{An example shopping list that is a prime example of CM techniques being used in home life (\cite{shopping-list}).} \label{fig:shopping}
+		\end{wrapfigure}
+	
+		But the lessons that are learned from CM in industry can be applied to home life as well. Keeping the cleaning supplies in a certain cupboard, writing groceries on a piece of paper as they are used up and having a filing system for important documents are examples of how CM has infiltrated many homes. The majority of families will not realise that they are using tried and tested CM techniques to improve the efficiency of their households. Is it possible to incorporate CM further into our daily lives?
+		
+		A lot of CM revolves around lists; to do, in progress, audit, done lists are all common place in CM projects. This is because if we tried to remember everything about a project without the aid of lists we would be lost. This is especially true when executing complicated tasks like engineering a bridge or designing logic to control a function. The same can be said for home life as shopping lists (as seen in Figure \ref{fig:shopping}) are common place but why not have a general \emph{to do list}. Expand that list in to a weekly plan on your calendar (app or physical). It would be foolish to execute an industrial project without a detailed plan, personal lives are no less complicated. 
+		
+		Another key component of CM is knowing where everything related to a project is. Being able to look quickly located bug and testing reports can save a lot of time. The same can be true for knowing exactly where the bleach or light bulbs are kept in the house. It is not enough to know which cupboard these items may be located in, as you would not expect the bug reports to be left in one general folder, the reports may be kept in a dated folder and the files timestamped with the summary of the issue. So why not have baskets in your cleaning supplied cupboard, each with their own dedicated label. Benjamin Franklin once said \enquote{A place for everything and everything in it's place}, this is very true for keeping an efficient household (\cite{cm-at-home}).  
 		
 	\section{Embracing CM} \label{sec:embracing}
+	We have already discussed what CM is and how it came to be in Sections \ref{sec:history} and \ref{sec:principles}. Section \ref{sec:using} covered how CM is utilised in a project. This section will discuss the benefits of CM and the costs of incorporating it into a project. 
 	
 		\subsection{Benefits of CM} \label{sec:benefits}
+		As stated throughout this paper the principle benefit of CM is that it allows for individuals to contribute to a project without disrupting other contributors with minimal training. Increased efficiency and communication can be experienced within teams, both internally and externally (\cite{unexpected-benefits}). Section \ref{sec:office} states that each function of CM produces a formal product, usually in the form of a report. These reports form a paper trail that records every detail of a project, which in turn can be reviewed to see where the project (and the development methodologies used) can be improved for future use. Products that were built using CM tend to be more reliable due to the higher level of scrutiny that is inherited from the use of CM techniques (\cite{benefits}).
 		
 		\subsection{Costs} \label{sec:costs}
+		CM is not free, there are associated costs with it. Creating the CM document from the first function is a huge undertaking (see Section \ref{sec:planning}). We can either purchase a licence to a tool that will create our CM rules, or hire skilled administrators to write the document from scratch. No matter what we do it will cost both money and time. We may also need additional licences for tools to generate the reports for the other five functions of CM, and administrators to ensure that the CM system is working in an optimal manner. So there is a huge time and cost investment required to get CM off the ground (\cite{costs}). Chef, a popular automated CM tool has a licence cost of \$137 per node (per computer using Chef) (\cite{chef-pricing}).
 		
 	\section{Conclusion} \label{sec:conc}
 	

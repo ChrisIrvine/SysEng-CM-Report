@@ -1,8 +1,38 @@
 \begin{thebibliography}{}
 
+\bibitem[Aiello and Sachs, 2010]{CM-BestPractices}
+Aiello, B. and Sachs, L. (2010).
+\newblock {\em Configuration Management Best Practices: Practical Methods that
+  Work in the Real World}.
+\newblock Pearson Education.
+
+\bibitem[{Akhila K E}, 2016]{cm-at-home}
+{Akhila K E} (2016).
+\newblock Life under configuration control.
+
 \bibitem[{Association for Project Management}, 2017]{apmDef}
 {Association for Project Management} (2017).
 \newblock Configuration management.
+
+\bibitem[{Chef Software Inc.}, 2018]{chef}
+{Chef Software Inc.} (2018).
+\newblock Chef.
+
+\bibitem[{Chef Software, Inc}, 2018]{chef-pricing}
+{Chef Software, Inc} (2018).
+\newblock Chef pricing.
+
+\bibitem[CloudBees, 2018]{codeship}
+CloudBees (2018).
+\newblock Codeship.
+
+\bibitem[{GitHub, Inc.}, 2018]{github}
+{GitHub, Inc.} (2018).
+\newblock Github.
+
+\bibitem[Giva, 2016]{benefits}
+Giva (2016).
+\newblock The benefits of configuration management.
 
 \bibitem[Lager et~al., 2004]{EIA-649}
 Lager, A., Brummer, B., Noble, D., et~al. (2004).
@@ -16,9 +46,25 @@ McElrath, R. (2007).
 Perry, W.~J. (1994).
 \newblock Specification \& standards: A new way of doing business.
 
+\bibitem[Puppet, 2018]{puppet}
+Puppet (2018).
+\newblock Puppet.
+
+\bibitem[Tumisu, 2017]{shopping-list}
+Tumisu (2017).
+\newblock Shopping list.
+
+\bibitem[UpGuard, 2017]{costs}
+UpGuard (2017).
+\newblock 5 things about configuration management your boss needs to know.
+
 \bibitem[{U.S. Department of Defence}, 2002]{mil-hdbk}
 {U.S. Department of Defence} (2002).
 \newblock {\em Military Handbook: Configuration Management Guidance}.
+
+\bibitem[Walker, 2016]{unexpected-benefits}
+Walker, A. (2016).
+\newblock Unexpected benefits of configuration management software.
 
 \bibitem[Wang, 2011]{history-standards}
 Wang, P. (2011).

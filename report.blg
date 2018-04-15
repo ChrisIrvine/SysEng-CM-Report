@@ -5,49 +5,67 @@ The style file: apalike.bst
 Database file #1: report.bib
 Warning--entry type for "apmDef" isn't style-file defined
 --line 1 of file report.bib
-Warning--entry type for "DesignDocExample" isn't style-file defined
---line 69 of file report.bib
+Warning--entry type for "chef" isn't style-file defined
+--line 49 of file report.bib
+Warning--entry type for "puppet" isn't style-file defined
+--line 56 of file report.bib
+Warning--entry type for "codeship" isn't style-file defined
+--line 63 of file report.bib
+Warning--entry type for "github" isn't style-file defined
+--line 70 of file report.bib
+Warning--entry type for "shopping-list" isn't style-file defined
+--line 77 of file report.bib
+Warning--entry type for "cm-at-home" isn't style-file defined
+--line 84 of file report.bib
+Warning--entry type for "benefits" isn't style-file defined
+--line 91 of file report.bib
+Warning--entry type for "unexpected-benefits" isn't style-file defined
+--line 99 of file report.bib
+Warning--entry type for "costs" isn't style-file defined
+--line 106 of file report.bib
+Warning--entry type for "chef-pricing" isn't style-file defined
+--line 113 of file report.bib
 Warning--empty publisher in mil-hdbk
 Warning--empty journal in history-standards
-You've used 6 entries,
+You've used 17 entries,
             1935 wiz_defined-function locations,
-            499 strings with 4452 characters,
-and the built_in function-call counts, 1594 in all, are:
-= -- 150
-> -- 58
-< -- 5
-+ -- 20
-- -- 18
-* -- 111
-:= -- 312
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 37
-chr.to.int$ -- 6
-cite$ -- 8
-duplicate$ -- 67
-empty$ -- 104
-format.name$ -- 24
-if$ -- 290
+            536 strings with 5064 characters,
+and the built_in function-call counts, 4274 in all, are:
+= -- 419
+> -- 141
+< -- 16
++ -- 46
+- -- 42
+* -- 284
+:= -- 839
+add.period$ -- 35
+call.type$ -- 17
+change.case$ -- 103
+chr.to.int$ -- 17
+cite$ -- 19
+duplicate$ -- 181
+empty$ -- 277
+format.name$ -- 61
+if$ -- 782
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 27
-num.names$ -- 18
-pop$ -- 35
+missing$ -- 5
+newline$ -- 72
+num.names$ -- 51
+pop$ -- 84
 preamble$ -- 1
-purify$ -- 38
+purify$ -- 105
 quote$ -- 0
-skip$ -- 58
+skip$ -- 158
 stack$ -- 0
-substring$ -- 74
-swap$ -- 1
+substring$ -- 208
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
+type$ -- 98
 warning$ -- 2
-while$ -- 12
+while$ -- 34
 width$ -- 0
-write$ -- 62
-(There were 4 warnings)
+write$ -- 174
+(There were 13 warnings)
