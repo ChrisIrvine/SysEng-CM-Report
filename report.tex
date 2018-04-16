@@ -4,6 +4,7 @@
 \usepackage{fancyhdr}
 \usepackage{csquotes}
 \usepackage{wrapfig}
+\usepackage{natbib}
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
@@ -21,7 +22,9 @@
 	\maketitle
 	
 	\begin{abstract}
-		200 words of text here about how awesome this is
+	Configuration Management (CM) was created by the U.S. Department of Defence in the mid 1950s to provide a level of consistency in the hardware that was being used in the military. Allowing the training needed to perform maintenance on that hardware to be generalised, reducing costs. For the next 40 years, CM was refined into a distinct technical disciple and was picked up by private industries, enforced by Standard Developing Organisations. 
+	
+	Today, CM is considered a staple in the administration and management of large projects and a plethora of tools have been developed to automate the CM process. A handful of CM techniques, such as list making and consistent filing have been incorporated into the home life. CM is not, however, a silver bullet to solving all problems with a project. There are inherent costs, both time and financial, to installing and maintaining CM within the project life-cycle. Whether those costs are acceptable to a project can only be answered by the project's leading staff members. 
 	\end{abstract}
 
 	\section{Introduction} \label{sec:intro}
@@ -142,11 +145,15 @@
 		As stated throughout this paper the principle benefit of CM is that it allows for individuals to contribute to a project without disrupting other contributors with minimal training. Increased efficiency and communication can be experienced within teams, both internally and externally (\cite{unexpected-benefits}). Section \ref{sec:office} states that each function of CM produces a formal product, usually in the form of a report. These reports form a paper trail that records every detail of a project, which in turn can be reviewed to see where the project (and the development methodologies used) can be improved for future use. Products that were built using CM tend to be more reliable due to the higher level of scrutiny that is inherited from the use of CM techniques (\cite{benefits}).
 		
 		\subsection{Costs} \label{sec:costs}
-		CM is not free, there are associated costs with it. Creating the CM document from the first function is a huge undertaking (see Section \ref{sec:planning}). We can either purchase a licence to a tool that will create our CM rules, or hire skilled administrators to write the document from scratch. No matter what we do it will cost both money and time. We may also need additional licences for tools to generate the reports for the other five functions of CM, and administrators to ensure that the CM system is working in an optimal manner. So there is a huge time and cost investment required to get CM off the ground (\cite{costs}). Chef, a popular automated CM tool has a licence cost of \$137 per node (per computer using Chef) (\cite{chef-pricing}).
+		CM is not free, there are associated costs with it. Creating the CM document from the first function is a huge undertaking (see Section \ref{sec:planning}). We can either purchase a licence to a tool that will create our CM rules, or hire skilled administrators to write the document from scratch. No matter what we do it will cost both money and time. We may also need additional licences for tools to generate the reports for the other five functions of CM, and administrators to ensure that the CM system is working in an optimal manner. So there is a huge time and cost investment required to get CM off the ground (\cite{costs}). For example; Chef, a popular automated CM tool, has a licence cost of \$137 per node (per computer using Chef) (\cite{chef-pricing}).
 		
 	\section{Conclusion} \label{sec:conc}
+	In this paper we have discussed the origins of Configuration Management (CM), the adoption of CM into industry and the creation of Software Configuration Management (see Section \ref{sec:history}). We gained an understanding of the functions that govern CM (see Section \ref{sec:principles}) and how CM is carried out in daily life, both in the office and at home (see Section \ref{sec:using}), before examining the costs and benefits of CM (see Section \ref{sec:embracing}).
 	
-	\bibliographystyle{apalike}
+	It is well known that CM can benefit the majority of projects, with the noticeable exception of simple tasks, increasing efficiency and management quality.  Many CM techniques, such as lists and consistent filing have managed to be incorporated into home life, the argument can be made for further incorporation of CM into the home (see Section \ref{sec:home}). However, it is the associated costs (as described in Section \ref{sec:costs}) that dictate whether it is beneficial to incorporate CM into a project. This is true for both projects at work or home, and is a question that can only be answered by the project administrators.  
+	
+	\clearpage
+	\bibliographystyle{asgm}
 	\bibliography{report}
 \end{document}
 
